@@ -1,5 +1,8 @@
 target/
 build/
+data/
+*.mv.db
+*.trace.db
 *.class
 *.log
 *.iml
