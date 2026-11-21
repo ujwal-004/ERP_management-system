@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ERP Dashboard</title><link rel="stylesheet" href="assets/css/style.css"></head>
+<body data-page="dashboard">
+<header class="topbar"><div class="brand">ERP Management System</div><nav><a href="dashboard.html">Dashboard</a><a href="modules/users/user.html">Users</a><a href="modules/products/product.html">Products</a><a href="modules/suppliers/supplier.html">Suppliers</a><a href="modules/inventory/inventory.html">Inventory</a><button id="logoutButton">Logout</button></nav></header>
+<main class="container">
+  <h1>Overview</h1><p class="subtitle">Current record counts from the ERP database.</p>
+  <section class="grid">
+    <article class="card"><span class="metric">Users</span><strong class="metric-value" id="count-users">—</strong></article>
+    <article class="card"><span class="metric">Products</span><strong class="metric-value" id="count-products">—</strong></article>
+    <article class="card"><span class="metric">Suppliers</span><strong class="metric-value" id="count-suppliers">—</strong></article>
+    <article class="card"><span class="metric">Inventory records</span><strong class="metric-value" id="count-inventory">—</strong></article>
+  </section>
+  <div class="module-links">
+    <a class="button" href="modules/users/user.html">Manage users</a><a class="button" href="modules/products/product.html">Manage products</a><a class="button" href="modules/suppliers/supplier.html">Manage suppliers</a><a class="button" href="modules/inventory/inventory.html">Manage inventory</a>
+  </div>
+  <p id="message" class="message"></p>
+  <section class="panel"><h2>Getting started</h2><p class="small-note">Add suppliers first, then products and inventory records. Product and inventory forms validate numeric values and the API checks related records through database constraints.</p></section>
+</main>
+<script src="assets/js/app.js"></script>
+</body></html>
