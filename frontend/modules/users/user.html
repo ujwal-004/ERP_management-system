@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Users | ERP</title><link rel="stylesheet" href="../../assets/css/style.css"></head>
+<body data-page="users">
+<header class="topbar"><div class="brand">ERP Management System</div><nav><a href="../../dashboard.html">Dashboard</a><a href="../products/product.html">Products</a><a href="../suppliers/supplier.html">Suppliers</a><a href="../inventory/inventory.html">Inventory</a><button id="logoutButton">Logout</button></nav></header>
+<main class="container"><h1>Users</h1><p class="subtitle">Create, edit and remove users records.</p>
+<section class="panel"><h2>Add / edit record</h2><form id="recordForm"><div class="form-grid"><div><label>Username</label><input name="username" required></div><div><label>Email</label><input name="email" type="email" required></div><div><label>New password (leave blank on edit)</label><input name="password" type="password" minlength="8"></div><div><label>Role</label><select name="role"><option>USER</option><option>ADMIN</option></select></div></div><div class="form-actions"><button id="saveButton" type="submit">Save record</button><button type="reset" class="secondary">Clear</button></div></form><p id="message" class="message"></p></section>
+<section class="panel"><h2>Users list</h2><div class="table-wrap"><table><thead><tr><th>ID</th><th>Username</th><th>Email</th><th>Role</th><th>Actions</th></tr></thead><tbody id="records"></tbody></table></div></section>
+</main><script src="../../assets/js/app.js"></script></body></html>
