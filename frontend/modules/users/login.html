@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ERP Login</title><link rel="stylesheet" href="../../assets/css/style.css"></head>
+<body data-page="login">
+<main class="auth-card card">
+  <h1>ERP Management System</h1><p class="subtitle">Sign in to the demo dashboard.</p>
+  <form id="loginForm">
+    <div class="form-field"><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="username"></div>
+    <div class="form-field"><label for="password">Password</label><input id="password" name="password" type="password" required autocomplete="current-password"></div>
+    <button type="submit">Sign in</button>
+  </form>
+  <p id="message" class="message"></p><p class="small-note">The first admin account is created at backend startup when ERP_ADMIN_EMAIL and ERP_ADMIN_PASSWORD are configured.</p>
+</main><script src="../../assets/js/app.js"></script></body></html>
