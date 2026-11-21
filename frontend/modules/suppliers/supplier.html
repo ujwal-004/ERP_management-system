@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Suppliers | ERP</title><link rel="stylesheet" href="../../assets/css/style.css"></head>
+<body data-page="suppliers">
+<header class="topbar"><div class="brand">ERP Management System</div><nav><a href="../../dashboard.html">Dashboard</a><a href="../users/user.html">Users</a><a href="../products/product.html">Products</a><a href="../inventory/inventory.html">Inventory</a><button id="logoutButton">Logout</button></nav></header>
+<main class="container"><h1>Suppliers</h1><p class="subtitle">Create, edit and remove suppliers records.</p>
+<section class="panel"><h2>Add / edit record</h2><form id="recordForm"><div class="form-grid"><div><label>Supplier name</label><input name="name" required></div><div><label>Contact person</label><input name="contact_person"></div><div><label>Phone</label><input name="phone"></div><div><label>Email</label><input name="email" type="email"></div><div><label>Address</label><textarea name="address"></textarea></div></div><div class="form-actions"><button id="saveButton" type="submit">Save record</button><button type="reset" class="secondary">Clear</button></div></form><p id="message" class="message"></p></section>
+<section class="panel"><h2>Suppliers list</h2><div class="table-wrap"><table><thead><tr><th>ID</th><th>Supplier</th><th>Contact</th><th>Phone</th><th>Email</th><th>Address</th><th>Actions</th></tr></thead><tbody id="records"></tbody></table></div></section>
+</main><script src="../../assets/js/app.js"></script></body></html>
